@@ -103,6 +103,8 @@ For each tar.gz file, you can build and install them with the following commands
   python configure.py
   make && make install
 
+.. _nipy-and-friends:
+
 NIPY And Friends
 ````````````````
 
@@ -121,5 +123,16 @@ Finally check out the XIPY code, and set it up::
 
   git clone git://github.com/miketrumpis/xipy.git
   cd xipy && python setup.py install
+
+Ubuntu install
+--------------
+
+::
+
+   sudo apt-get install mayavi2 python-traitsbackendqt python-matplotlib
+   sudo apt-get install python-scipy
+  
+This will pull in other dependencies such as ``python-qt4``.  Now you need
+nipy-and-friends_ and *xipy*.
 
 .. include:: ../links.txt
